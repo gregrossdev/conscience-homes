@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.site-wrapper {
+    @apply min-h-screen bg-gray-100
+}
+
+.site-container {
+    @apply container max-w-7xl mx-auto py-4;
+}
+
+.app-container {
+    @apply w-full p-4 bg-white shadow-md overflow-hidden sm:rounded-lg;
+}
