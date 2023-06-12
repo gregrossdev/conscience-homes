@@ -19,10 +19,10 @@
             </button>
         </div>
     </article>
-    <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1">
-        <div class="relative">
+    <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1 py-2">
+        <figure class="relative">
             <img src='/assets/Highlight1.svg' alt="" class="absolute -top-16 -left-10"/>
-        </div>
+        </figure>
         <img
             src='https://images.pexels.com/photos/6249543/pexels-photo-6249543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             alt="Macbook"

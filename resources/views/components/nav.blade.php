@@ -29,7 +29,7 @@
 {{--MOBILE--}}
 <nav id='mobileNav' class="hidden px-4 py-6 fixed top-0 left-0 h-full w-full bg-secondary z-20 animate-fade-in-down">
     <div id="hideMenu" class="flex justify-end">
-        <img src='dist/assets/logos/Cross.svg' alt="" class="h-16 w-16" />
+        <img src='assets/logos/Cross.svg' alt="" class="h-16 w-16" />
     </div>
     <ul class="font-montserrat flex flex-col mx-8 my-24 items-center text-3xl">
         <li class="my-6">
