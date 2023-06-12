@@ -1,13 +1,34 @@
-<section class="bg-white dark:bg-gray-900">
-    <div class="grid max-w-screen-xl px-4 sm:px-6 lg:px-8 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div class="mr-auto lg:col-span-7">
-            <h1 class="max-w-xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Recovery Housing that works!!! When you work it.</h1>
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">From treatment plans to long term recovery goals.</p>
-
-
+<section
+    class="pt-24 md:mt-0 md:h-screen flex flex-col justify-center text-center md:text-left md:flex-row md:justify-between md:items-center lg:px-48 md:px-12 px-4 bg-secondary">
+    <article class="md:flex-1 md:mr-10">
+        <h1 class="font-pt-serif text-5xl font-bold mb-7">
+            Welcome to
+            <span class="bg-underline1 bg-left-bottom bg-no-repeat pb-2 bg-100%">
+          Conscience Homes
+        </span>
+        </h1>
+        <p class="font-pt-serif font-normal mb-7">
+            Empowering Recovery, Rebuilding Lives
+        </p>
+        <div class="font-montserrat">
+            <button class="bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2">
+                Get Started
+            </button>
+            <button class="px-6 py-4 border-2 border-black border-solid rounded-lg">
+                Learn More
+            </button>
         </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="mockup">
+    </article>
+    <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1">
+        <div class="relative">
+            <img src='/assets/Highlight1.svg' alt="" class="absolute -top-16 -left-10"/>
+        </div>
+        <img
+            src='https://images.pexels.com/photos/6249543/pexels-photo-6249543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            alt="Macbook"
+        />
+        <div class="relative">
+            <img src='/assets/Highlight2.svg' alt="" class="absolute -bottom-10 -right-6"/>
         </div>
     </div>
 </section>
