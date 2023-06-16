@@ -3,18 +3,18 @@
     <article class="md:flex-1 md:mr-10">
         <h1 class="font-pt-serif text-5xl font-bold mb-7">
             Welcome to
-            <span class="bg-underline1 bg-left-bottom bg-no-repeat pb-2 bg-100%">
+            <span class="bg-left-bottom bg-no-repeat pb-2 bg-100%">
           Conscience Homes
         </span>
         </h1>
-        <p class="font-pt-serif font-normal mb-7">
+        <p class="font-pt-serif text-xl mb-7">
             Empowering Recovery, Rebuilding Lives
         </p>
         <div class="font-montserrat">
-            <button class="bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2">
+            <button class="bg-black text-xl font-semibold px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2">
                 Get Started
             </button>
-            <button class="px-6 py-4 border-2 border-black border-solid rounded-lg">
+            <button class="px-6 py-4 text-xl font-semibold border-2 border-black border-solid rounded-lg">
                 Learn More
             </button>
         </div>
