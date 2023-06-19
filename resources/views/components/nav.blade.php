@@ -1,7 +1,6 @@
 <nav class="fixed flex py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary z-10">
     <figure class="flex items-center md:mr-4">
-{{--        logo --}}
-        <img src='/assets/logo.svg' alt="Logo" class="h-16" />
+
     </figure>
     <div class="w-full flex justify-between items-center">
         <ul class="font-montserrat text-xl items-center hidden md:flex">
