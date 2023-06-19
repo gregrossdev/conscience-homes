@@ -1,4 +1,4 @@
-<nav class="fixed flex py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary z-10">
+<nav class="fixed flex py-2 w-full lg:px-48 md:px-12 px-4 content-center items-center bg-secondary z-10">
     <figure class="flex items-center md:mr-4">
         <img src='/assets/logo.svg' alt="Logo" class="h-16" />
     </figure>
