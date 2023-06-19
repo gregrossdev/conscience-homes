@@ -12,13 +12,9 @@
 </head>
 <body class="font-sans antialiased">
     <div class="site-wrapper">
-{{--        <div class="site-container">--}}
-{{--            <div class="app-container">--}}
                 <x-nav />
                 {{ $slot  }}
-                <x-footer />
-{{--            </div>--}}
-{{--        </div>--}}
+{{--                <x-footer />--}}
     </div>
 </body>
 </html>
