@@ -11,7 +11,7 @@
                 rebuilding their lives.
             </p>
         </div>
-        <div class="md:grid md:grid-cols-2 md:grid-rows-2">
+        <div class="md:grid md:grid-cols-2 md:grid-rows-2 px-4">
 
             <article class="flex items-start font-montserrat my-6 mr-10">
                 <div>
