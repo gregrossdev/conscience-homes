@@ -1,11 +1,13 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-        "./resources/**/*.blade.php",
-        "./resources/**/*.js",
-        "./resources/**/*.vue",
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        './storage/framework/views/*.php',
+        './resources/views/**/*.blade.php',
+        './resources/js/**/*.vue',
     ],
-    darkMode: false, // or 'media' or 'class'
     theme: {
         colors: {
             secondary: "#F4F2ED",
@@ -23,6 +25,9 @@ module.exports = {
             "100%": "100%",
         },
         extend: {
+            fontFamily: {
+                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            },
             backgroundImage: {
                 underline1: "url('./assets/Underline1.svg')",
                 underline2: "url('./assets/Underline2.svg')",
@@ -47,8 +52,6 @@ module.exports = {
             },
         },
     },
-    variants: {
-        extend: {},
-    },
-    plugins: [],
+
+    plugins: [require('@tailwindcss/forms')],
 };

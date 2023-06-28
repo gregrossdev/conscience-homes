@@ -6,24 +6,21 @@
 
 @layer components {
     .sectionSize {
-        @apply lg:px-48 md:px-12 px-4 py-14 flex flex-col items-center;
+        @apply md:px-12 px-4 py-12 flex flex-col items-center;
     }
     .secondaryTitle {
         @apply font-pt-serif text-3xl bg-left-bottom bg-no-repeat pb-8 px-16 mb-8;
     }
 }
 
-.site-wrapper {
-    @apply min-h-screen bg-black;
-}
-
-.site-container {
-    @apply container max-w-7xl mx-auto py-4;
-}
-
 .app-container {
-    @apply w-full p-4 bg-white shadow-md overflow-hidden sm:rounded-lg;
+    @apply md:container md:max-w-3xl mx-auto md:py-4;
 }
+
+.layout-wrapper {
+    @apply md:p-4 bg-white shadow-md rounded flex flex-col;
+}
+
 
 .growing-underline {
     display: block;

@@ -1,32 +1,25 @@
 import './bootstrap';
+import '../css/app.css';
 
-window.addEventListener("load", function () {
-    console.log(document.querySelector("#showMenu"));
-    document
-        .querySelector("#showMenu")
-        .addEventListener("click", function (event) {
-            document.querySelector("#mobileNav").classList.remove("hidden");
-        });
+import { createApp, h } from 'vue';
+import {createInertiaApp, Head, Link} from '@inertiajs/vue3';
+import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
+import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 
-    document
-        .querySelector("#hideMenu")
-        .addEventListener("click", function (event) {
-            document.querySelector("#mobileNav").classList.add("hidden");
-        });
+const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
-    document.querySelectorAll("[toggleElement]").forEach((toggle) => {
-        toggle.addEventListener("click", function (event) {
-            console.log(toggle);
-            const answerElement = toggle.querySelector("[answer]");
-            const caretElement = toggle.querySelector("img");
-            console.log(answerElement);
-            if (answerElement.classList.contains("hidden")) {
-                answerElement.classList.remove("hidden");
-                caretElement.classList.add("rotate-90");
-            } else {
-                answerElement.classList.add("hidden");
-                caretElement.classList.remove("rotate-90");
-            }
-        });
-    });
+createInertiaApp({
+    title: (title) => `${title} - ${appName}`,
+    resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, import.meta.glob('./Pages/**/*.vue')),
+    setup({ el, App, props, plugin }) {
+        return createApp({ render: () => h(App, props) })
+            .component("Head", Head)
+            .component("Link", Link)
+            .use(plugin)
+            .use(ZiggyVue, Ziggy)
+            .mount(el);
+    },
+    progress: {
+        color: '#4B5563',
+    },
 });
